@@ -6,16 +6,32 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "deploy": "gh-pages -d web-build",
+    "predeploy": "expo build:web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "1.21.0",
     "expo": "~50.0.7",
     "expo-status-bar": "~1.11.1",
+    "expo-updates": "~0.24.11",
     "react": "18.2.0",
-    "react-native": "0.73.4"
+    "react-dom": "18.2.0",
+    "react-native": "0.73.4",
+    "react-native-web": "~0.19.6"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.3"
   },
   "private": true
 }
